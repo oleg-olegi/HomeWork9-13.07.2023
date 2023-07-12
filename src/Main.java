@@ -44,13 +44,12 @@ public class Main {
         System.out.println("Средняя сумма трат за месяц составила " + medianPayOuts / arr.length + " рублей");
 
     }
-
     public static void task4() {
         System.out.println("Задача 4");
         char[] arr = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        char tmp1;
-        char tmp2;
-        int count = 1;
+        char tmp1;//временная
+        char tmp2;//временная
+        int count = 1;//счетчик
         for (int i = 0; i < arr.length/2; i++) {
             tmp1 = arr[i];
             tmp2 = arr[arr.length - count];
