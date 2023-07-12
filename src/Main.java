@@ -37,7 +37,7 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
-        int medianPayOuts = 0;
+        float medianPayOuts = 0f;
         for (int element : arr) {
             medianPayOuts += element;
         }
