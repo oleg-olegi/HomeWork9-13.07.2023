@@ -38,13 +38,15 @@ public class Main {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
         int medianPayOuts = 0;
-        for (int element: arr) {
-            medianPayOuts+=element;
+        for (int element : arr) {
+            medianPayOuts += element;
         }
-        System.out.println("Средняя сумма трат за месяц составила "+medianPayOuts/ arr.length+" рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + medianPayOuts / arr.length + " рублей");
 
-        }
+    }
+
     public static void task4() {
         System.out.println("Задача 4");
         int[] arr = generateRandomArray();
     }
+}
