@@ -47,6 +47,17 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int[] arr = generateRandomArray();
+        char[] arr = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char tmp1;
+        char tmp2;
+        int count = 1;
+        for (int i = 0; i < arr.length/2; i++) {
+            tmp1 = arr[i];
+            tmp2 = arr[arr.length - count];
+            arr[i] = tmp2;
+            arr[arr.length - count] = tmp1;
+            count++;
+        }
+        System.out.println(arr);
     }
 }
