@@ -30,8 +30,18 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
         int[] arr = generateRandomArray();
-        Arrays.sort(arr);
-        System.out.println("Минимальная сумма трат за день составилa " + arr[0] + " рублей. Максимальная сумма трат за день составила " + arr[arr.length - 1] + " рублей");
+        /*Arrays.sort(arr);*/
+        int max = 0;
+        int min = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (i + 1 == arr.length) {
+                break;
+            }
+            max = Math.max(arr[i], arr[i + 1]);
+            min = Math.min(arr[i], arr[i + 1]);
+        }
+        System.out.println("Минимальная сумма трат за день составилa " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
+
     }
 
     public static void task3() {
@@ -44,19 +54,24 @@ public class Main {
         System.out.println("Средняя сумма трат за месяц составила " + medianPayOuts / arr.length + " рублей");
 
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         char[] arr = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        char tmp1;//временная
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i]);
+        }
+        System.out.println();
+        /*char tmp1;//временная
         char tmp2;//временная
         int count = 1;//счетчик
-        for (int i = 0; i < arr.length/2; i++) {
+        for (int i = 0; i < arr.length / 2; i++) {
             tmp1 = arr[i];
             tmp2 = arr[arr.length - count];
             arr[i] = tmp2;
             arr[arr.length - count] = tmp1;
             count++;
-        }
-        System.out.println(arr);
+
+        }*/
     }
 }
