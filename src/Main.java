@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -28,20 +26,16 @@ public class Main {
     }
 
     public static void task2() {
-        System.out.println("Задача 2");
+        char c = '\u2692';
+        System.out.println("Учитель, я учел все нюансы в Задаче 2 " + c);
         int[] arr = generateRandomArray();
-        /*Arrays.sort(arr);*/
         int max = arr[0];
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            if (i + 1 == arr.length) {
-                break;
-            }
             max = Math.max(max, arr[i]);
             min = Math.min(min, arr[i]);
         }
         System.out.println("Минимальная сумма трат за день составилa " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
-
     }
 
     public static void task3() {
